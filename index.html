@@ -1,132 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inovachain</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="styles03.css">
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Inovachain</div>
-
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-
-
-                </ul>
-
-            </div>
-            <button class="button1">Sign In</button>
-
+    <nav>
+        <div class="nav-container">
+            <h1>Table Generator</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <div>
-            <h1>Welcome to Inovachain</h1>
-            <p> InovaChain offers innovative solutions for secure supply chains, seamless financial services, and
-                efficient smart contract execution</p>
+        <div class="container">
+            <h2>Multiplication Table Generator</h2>
+            <p>Enter a number and get its multiplication table</p>
+            
+            <div class="input-section">
+                <input type="number" id="numberInput" placeholder="Enter a number">
+                <button id="generateBtn">Generate Table</button>
+            </div>
+            
+            <div id="errorMessage" class="error"></div>
+            
+            <div id="tableResult" class="result-table"></div>
         </div>
-        <div>
-            <img src="./images/inova_banner.webp" width="600" alt="banner">
-        </div>
-        <div>
-            <button class="button2">Get Started</button>
-        </div>
-
-        <section1>
-            <div>
-                <h3>Our Clients</h3>
-                <p>we have been colaborating with companies</p>
-            </div>
-            <div>
-                <img src="./images/logo0001-removebg.png" alt="btc">
-                <img src="./images/logo0002-removebg.png" alt="bnb">
-                <img src="./images/logo0003-removebg.png" alt="eth">
-                <img src="./images/logo0004-removebg.png" alt="sol">
-                <img src="./images/logo0005-removebg.png" alt="xrp">
-            </div>
-
-        </section1>
-
-        <section2>
-            <div>
-                <h2>Explore the Power of Blockchain in Key Sectors</h2>
-                <p>Who can benefit from blockchain technology?</p>
-
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Creator Communities</h3>
-                <p>Support creators with NFT marketplaces and direct engagement with their audience</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Financial Institutions</h3>
-                <p>Blockchain enables secure, transparent, and decentralized financial transactions</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Supply Chain Management</h3>
-                <p>Enhance traceability, transparency, and operational efficiency across global supply chains</p>
-            </div>
-
-        </section2>
-        <section class="s3">
-            <div>
-                <h2>Helping Blockchain Transform the World</h2>
-                <p>We reached here with innovation and decentralization</p>
-                <div>
-                    <img src="" alt="">
-                    <h3>150+</h3>
-                    <p>Blockchain Networks</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>665,000+</h3>
-                    <p>Smartcontracts</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>$450 Billion+</h3>
-                    <p>Total Value Locked</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>11,732,045+</h3>
-                    <p>Active Wallets</p>
-                </div>
-            </div>
-
-            <section class="s4">
-                <div>
-                    <h2>Blockchain: The Foundation of the Future</h2>
-                    <p>Learn how blockchain is reshaping industries, securing data, and powering the next generation of
-                        applications.</p>
-
-
-                </div>
-
-            </section>
-
-
-
-
-        </section>
-
     </main>
 
+    <footer>
+        <p>&copy; 2025 Multiplication Table Generator, All Rights Reserved</p>
+    </footer>
 
-
+    <script src="script03.js"></script>
 </body>
-
 </html>
