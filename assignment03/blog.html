@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Multiplication Table Generator</title>
+    <link rel="stylesheet" href="styles03.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Table Generator</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container blog-container">
+            <h2>JavaScript Concepts</h2>
+            
+            <div class="blog-post">
+                <h3>1. What is the difference between let, const, and var in JavaScript?</h3>
+                <p>
+                    In my experience, choosing between let, const, and var can really impact your code's behavior. I've found that var has function scope, which sometimes caused me unexpected bugs when variables "leaked" outside of blocks. When ES6 came along, I switched to using let for variables that need to change and const for ones that shouldn't. The block scoping of let and const has saved me countless headaches, especially in loops and conditionals. I particularly appreciate how const prevents accidental reassignments - it's caught my mistakes many times during development. That said, I still occasionally use var in specific situations where I need its hoisting behavior.
+                </p>
+            </div>
+            
+            <div class="blog-post">
+                <h3>2. What is the difference between find() and filter() method?</h3>
+                <p>
+                    I use find() and filter() almost daily, but they serve different purposes in my code. When I need just one matching element, find() is my go-to since it returns the first match and stops searching. This has been super helpful when looking up users by ID or finding specific items in a shopping cart. On the other hand, filter() has been invaluable when I need all matching elements, like when implementing search functionality or displaying filtered product lists. I've noticed filter() is slightly more resource-intensive on large arrays since it always processes the entire array, while find() can be more efficient by stopping early. The return value difference (single element vs array) also affects how I structure my subsequent code.
+                </p>
+            </div>
+            
+            <div class="blog-post">
+                <h3>3. How do you select an element in the DOM using JavaScript? Name a few methods.</h3>
+                <p>
+                    When working with the DOM, I've found several ways to grab elements depending on the situation. I frequently use document.getElementById() when I need a specific element with a unique ID - it's fast and straightforward. For more flexible selection, I often reach for document.querySelector() which lets me use CSS selectors, making it super versatile. When I need multiple elements, document.querySelectorAll() has been my savior, returning all matching elements as a NodeList. In older projects, I sometimes still use document.getElementsByClassName() or document.getElementsByTagName(), though I've mostly switched to the more modern methods. Each approach has its strengths - IDs for unique elements, classes for groups, and tags for broader selections.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Multiplication Table Generator, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

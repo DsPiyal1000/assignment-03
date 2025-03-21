@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.balance h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.amounts h3 {
+    color: #555;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+}
+
+#deposit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#deposit-btn:hover {
+    background-color: #218838;
+}
+
+#withdraw-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#withdraw-btn:hover {
+    background-color: #c82333;
+}
